@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+*{
+    zoom: 95%;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height: 100vh;
+    z-index: -1;
+}
+
+.galeria-container {
+    background-color: transparent;
+    pointer-events: none;
+    overflow-y: auto;
+    color: white;
+}
+.galeria-container img {
+    position: relative; 
+    z-index: 2; 
+}
+.navbar {
+    width: 85;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 700px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    top: -40px;
+}
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    top: -40px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rosybrown;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after {
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 120px;
+    text-align: -20px;
+
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    width: 1000px;
+    font-size: 22px;
+}
+.navbar2 {
+    position: relative;
+    text-align: center;
+    bottom: -50px;
+}
+
+.navbar2 ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-align: -40px;
+    top: -40px;
+    color: #fff;
+}
+.navbar2 ul li a {
+    text-decoration: none;
+    color: rosybrown;
+    text-transform: uppercase;
+    
+}
+.navbar2 ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rosybrown;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+.navbar2 ul li:hover:after {
+    width: 100%;
+}
+div.galeria {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 rosybrown, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 42.5vh;
+}
+div.galeria img {
+    width: 47vh;
+    height: 70vh;
+}
+div.galeria:hover {
+    border: 1px solid ros;
+    transform: rotate(-3deg);
+}
+div.pie {
+    text-align: center;
+    text-shadow: 2px 2px 5px rosybrown;
+    padding: 10px;
+    color: white;
+    font-size: 0.89vw; /* ajusta el tamaño del texto según el ancho de la pantalla */
+}
+
+.galeria {
+    height: 70vh;
+
+}
