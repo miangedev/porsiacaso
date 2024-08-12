@@ -7,6 +7,7 @@ Aqui se mostraran los avances.
 
 Ponencias via drive, y mostraremos imagen de los estudiantes, desde el grado 11-1, hasta 11-3.
 
+Hemos programado la pagina para verse desde dispositivos moviles.
 
 
 
