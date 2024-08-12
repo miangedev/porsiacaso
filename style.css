@@ -3,151 +3,339 @@
     font-family: sans-serif;
 
 }
-*{
-    zoom: 95%;
-}
-.banner {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height: 100vh;
-    z-index: -1;
-}
-
-.galeria-container {
-    background-color: transparent;
-    pointer-events: none;
-    overflow-y: auto;
-    color: white;
-}
-.galeria-container img {
-    position: relative; 
-    z-index: 2; 
-}
-.navbar {
-    width: 85;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 700px;
-    cursor: pointer;
-    color: white;
-    position: relative;
-    top: -40px;
-}
-.navbar ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-    top: -40px;
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
+@media (max-width: 989px) {
+    *{
+        zoom: 95%;
+    }
+    img.logo {
+        display: none;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        height: 100vh;
+        z-index: -1;
+    }
+    .ponencias {
+        text-align: center;
+        position: absolute;
+        left: 15px;
+        text-decoration: none;
+        list-style-type: none;
+        top: 45px;
+    }
+    .ponencias a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        bottom: 10px;
+    }
     
-}
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: rosybrown;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.navbar ul li:hover:after {
-    width: 100%;
-}
-.content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
-}
-.content h1 {
-    font-size: 70px;
-    margin-top: 120px;
-    text-align: -20px;
-
-}
-.content p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-    width: 1000px;
-    font-size: 22px;
-}
-.navbar2 {
-    position: relative;
-    text-align: center;
-    bottom: -50px;
-}
-
-.navbar2 ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-    text-align: -40px;
-    top: -40px;
-    color: #fff;
-}
-.navbar2 ul li a {
-    text-decoration: none;
-    color: rosybrown;
-    text-transform: uppercase;
+    .galeria-container {
+        background-color: transparent;
+        pointer-events: none;
+        overflow-y: auto;
+        color: white;
+    }
+    .galeria-container img {
+        position: relative; 
+        z-index: 2; 
+    }
+    .navbar {
+        width: 85;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 10%;
+        text-align: left;
+        left: 8px;
+    }
     
-}
-.navbar2 ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: rosybrown;
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    transition: 0.5s;
-}
-.navbar2 ul li:hover:after {
-    width: 100%;
-}
-div.galeria {
-    margin: 10px 20px;
-    box-shadow: 0 4px 8px 0 rosybrown, 0 6px 20px 0 rgba(0,0,0,0.19);
-    float: left;
-    width: 42.5vh;
-}
-div.galeria img {
-    width: 47vh;
-    height: 70vh;
-}
-div.galeria:hover {
-    border: 1px solid ros;
-    transform: rotate(-3deg);
-}
-div.pie {
-    text-align: center;
-    text-shadow: 2px 2px 5px rosybrown;
-    padding: 10px;
-    color: white;
-    font-size: 0.89vw; /* ajusta el tamaño del texto según el ancho de la pantalla */
+    .navbar ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        top: -20px;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        
+    }
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rosybrown;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover:after {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: left;
+        color: white;
+        left: 9px;
+    }
+    .content h1 {
+        font-size: 40px;
+        margin-top: 120px;
+        text-align: -20px;
+        left: 5px;
+    }
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        width: 1000px;
+        font-size: 22px;
+    }
+    .navbar2 {
+        position: relative;
+        text-align: left;
+        bottom: -50px;
+        left: 20px;
+    }
+    
+    .navbar2 ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        text-align: -40px;
+        top: -40px;
+        color: #fff;
+    }
+    .navbar2 ul li a {
+        text-decoration: none;
+        color: rosybrown;
+        text-transform: uppercase;
+        
+    }
+    .navbar2 ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rosybrown;
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        transition: 0.5s;
+    }
+    .navbar2 ul li:hover:after {
+        width: 100%;
+    }
+    div.galeria {
+        margin: 5px 15px;
+        float: left;
+        width: 33.5vh;
+    }
+    div.galeria img {
+        width: 33.5vh;
+        height: 50vh;
+    }
+    div.galeria:hover {
+        border: 1px solid ros;
+        transform: rotate(-3deg);
+    }
+    div.pie {
+        text-align: center;
+        padding: 10px;
+        color: white;
+        font-size: 10px; 
+    }
+    
+    .galeria {
+        height: 50vh;
+    }
 }
 
-.galeria {
-    height: 70vh;
+@media (min-width: 991px) {
+    *{
+        zoom: 95%;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        height: 100vh;
+        z-index: -1;
+    }
+    .ponencias {
+        text-align: center;
+        position: absolute;
+        left: 500px;
+        text-decoration: none;
+        list-style-type: none;
+        top: 140px;
+    }
+    .ponencias a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        bottom: 10px;
+    }
+    
+    .galeria-container {
+        background-color: transparent;
+        pointer-events: none;
+        overflow-y: auto;
+        color: white;
+        top: 10px;
+    }
+    .galeria-container img {
+        position: relative; 
+        z-index: 2; 
+    }
+    .navbar {
+        width: 85;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 700px;
+        cursor: pointer;
+        color: white;
+        position: relative;
+        top: -40px;
+    }
+    .navbar ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        top: -40px;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        
+    }
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rosybrown;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover:after {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+    .content h1 {
+        font-size: 70px;
+        margin-top: 120px;
+        text-align: -20px;
+    
+    }
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        width: 1000px;
+        font-size: 22px;
+    }
+    .navbar2 {
+        position: relative;
+        text-align: center;
+        bottom: -50px;
+    }
+    
+    .navbar2 ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        text-align: -40px;
+        top: -40px;
+        color: #fff;
+    }
+    .navbar2 ul li a {
+        text-decoration: none;
+        color: rosybrown;
+        text-transform: uppercase;
+        
+    }
+    .navbar2 ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rosybrown;
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+        transition: 0.5s;
+    }
+    .navbar2 ul li:hover:after {
+        width: 100%;
+    }
+    div.galeria {
+        margin: 10px 20px;
+        box-shadow: 0 4px 8px 0 rosybrown, 0 6px 20px 0 rgba(0,0,0,0.19);
+        float: left;
+        width: 42.5vh;
+    }
+    div.galeria img {
+        width: 47vh;
+        height: 70vh;
+    }
+    div.galeria:hover {
+        border: 1px solid ros;
+        transform: rotate(-3deg);
+    }
+    div.pie {
+        text-align: center;
+        text-shadow: 2px 2px 5px rosybrown;
+        padding: 10px;
+        color: white;
+        font-size: 0.95vw; 
+    }
+    
+    .galeria {
+        height: 72vh;
+    
+    }
 
 }
+
+/* SI profesora, somos lo perfectamente capacitados para haber hecho la pagina del congreso, muchas gracias por todo, queremos llorar
+y la verdad, que ganas de llorar, gano el bucaramanga, pero nosotros no...
+aqui dejamos nuestra carta a la profe, el que lo vea, que pro que eres, pero ya no aguantamos, muchos dias sin dormir, y programando todo esto,
+si el instructor dario ve esto, la buena, lqm
+pero esto no es lo nuestro, somos mas de apps, apps web pero apps
+adios... */
